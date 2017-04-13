@@ -4,10 +4,9 @@
 	<title>Git Labrotary Manuals and Study Materials</title>
 	<link rel="stylesheet" type="text/css" href="css/all_css.css">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="javascript/js_scrolltop_btn.js"></script>
-	<script type="text/javascript" src="javascript/js_modal.js"></script>
+	<script type="text/javascript" src="javascript/js_bouncing_arrow.js"></script>
 </head>
 
 <body>
@@ -36,10 +35,11 @@
 <nav class="top_navigation" style="border-radius: 10px;">
 	<ul>
   		<li style="float: left;"><a class="active" href="#home">Home</a></li>
-  		<li><a href="#Contact">Contact</a></li>
+  		<li><a href="https://git.edu" target="_blank">College Website</a></li>
+  		<li><a href="https://library.git.edu" target="_blank">Library Webiste</a></li>
   		<li><a href="#about">About</a></li>
-  		<li><a href="#study_materials">Study Materials</a></li>
-  		<li><a href="manuals">Manuals</a></li>
+  		<li><a href="#study_materials" onclick="goto_studymaterials_manuals()">Study Materials</a></li>
+  		<li><a href="#manuals" onclick="goto_studymaterials_manuals()">Manuals</a></li>
   		</ul>
 </nav>
 
@@ -48,15 +48,15 @@
 	<p style="font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 380px;">This website contains the Labrotary Manuals and Study Materials for all semester of CSE departments</p>
 </div>
 <!--scroll top button-->
-<button onclick="topBtnFunc()" class="topBtn" id="topBtn" title="Go to top">Top</button>
+<button onclick="topBtnFunc()" class="topBtn" id="topBtn" title="Go to top"><i class="fa fa-angle-double-up" id="topbtn"></i></button>
 
 <center>
 	<div>
-		<i class="fa fa-angle-double-down" id="down_arrow"></i>
+		<i class="fa fa-angle-double-down" id="down_arrow" onclick="scrollDown()"></i>
 	</div>
 </center>
 
-<div style="margin-top: 30px">
+<div style="margin-top: 30px" id="manuals">
 	<h1 style="font-weight: bold;text-align: center;font-family: airstrike;text-decoration: underline;">Manuals</h1>
 		<div class="semesters">
   			<center>
@@ -94,10 +94,12 @@
 
   	<div class="col" style="text-align: center;">
     	<h2>Found the site Helpful? Express it in words then</h2>
-   			<div> 
+   			<div class="form-container"> 
  				<form action="/.php">
    					Name:
    			 		<input type="text" name="Name" style="border-radius: 5px">
+   			 		E-mail:
+   			 		<input type="E-mail" name="E-mail" style="border-radius: 5px">
     		 		Feedback:
     		 		<input type="text" name="Feedback" style="border-radius: 5px;">
     		 		<input type="submit" name="Submit" style="border-radius: 5px;">
@@ -129,3 +131,4 @@
 	}
 
 </script>
+

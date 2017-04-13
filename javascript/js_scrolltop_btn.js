@@ -15,18 +15,3 @@ function topBtnFunc() {
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
 
-//profile modal
-
-var prof_modal = document.getElementById("profileModal");
-var contactBtn = document.getElementById("showProfile");
-
-// When the user clicks the button, open the modal 
-contactBtn.onclick = function() {
-    prof_modal.style.display = "block";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == prof_modal) {
-        prof_modal.style.display = "none";
-    }
-}
