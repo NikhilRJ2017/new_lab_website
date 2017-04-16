@@ -31,9 +31,9 @@ li a:hover {
     font-family: airstrike;
     src :url("fonts/airstrike.ttf");
 }
+
 .page_title{
 
-    max-width: 100%;
     background-image: url("introimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,6 +58,7 @@ li a:hover {
     font-family: airstrike;
     font-size: 20px;
     box-shadow: 10px 10px 5px black;
+    cursor: pointer;
 
 }
 .sem_buttons:hover {
@@ -74,6 +75,7 @@ body{
     background-repeat: no-repeat;
     max-height: 100%;
     max-width: 100%;
+    margin: 0px;
 }
 
 #down_arrow {
@@ -97,6 +99,10 @@ body{
     0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
     40%  { -webkit-transform: translateY(-20px); }
     80% { -webkit-transform: translateY(-10px); }
+
+        0%, 20%, 60%, 100%  {transform: translateY(0); }
+    40%  { transform: translateY(-20px); }
+    80% { transform: translateY(-10px); }
 }
 
 #topbtn{
@@ -110,21 +116,6 @@ body{
 }
 
 
-
-.col-container {
-    background-color: #000000;
-    color: #FFFFFF;
-    display: table;
-    width: 100%;
-}
-.col {
-    display: table-cell;
-    padding: 16px;
-}
-
-.form-container{
-    display: block;
-}
 
 .topBtn{
   display: none;
@@ -187,5 +178,18 @@ body{
     font-size: 22px;
     color: red;
     margin: 3px 3px 3px 3px;
+
+}
+
+
+.footer-container{
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
+.footer-content{
+     display: inline-block;
+     margin: 20px 20px;
+     border-radius: 10px;
 
 }

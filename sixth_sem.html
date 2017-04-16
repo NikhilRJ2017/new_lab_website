@@ -21,6 +21,27 @@
   	</ul>
 </nav>
 
+<!--modal box-->
+<div class="modal-container">
+<center>
+<div id="profileModal" class="modal">
+	<div class="modal-content">
+		<div class="card" style="background-color: brown;">
+			<div class="card-container">
+				<img src="css/profile_img.jpg" alt="profile_image" style="width: 50%; height: 50%">
+				<h1 style="color: white">Nikhil Jadhav</h1>
+				<div class="title" style="color: grey; font-size: 18px;">Student at Gogte Institute of Technology<br></div>
+				<a href="#" id="linkIcons"><i class="fa fa-linkedin"></i></a> 
+    			<a href="#" id="linkIcons"><i class="fa fa-facebook"></i></a>
+    			<a href="#" id="linkIcons"><i class="fa fa-instagram"></i></a> 
+    		</div>
+		</div>
+	</div>
+</div>
+</center>
+</div>
+
+
 <h1>Labrotary Subjects for 6th Sem CSE</h1>
 
 <div class="container">
@@ -34,33 +55,52 @@
 </div>
 
 
+<!--footer-->
 
 <footer>
-	<div class="col-container">
-	  <div class="col" style="text-align: center;">
-    	<h1>About Developer</h2>
-    	<p>Click the below button</p>
-    	<button id="showProfile">Details</button>
-  	</div>
+	<div class="footer">
+		<div class="pages-footer-content">
+			<h1>About Developer</h1>
+			<title>Click below to know.</title>
+			<button id="showProfile">Details</button>
+		</div>
+		<div class="pages-footer-content">
+			<h1>Found this site useful? Well then express it in words.</h1>
+			<form>
+				Name:
+				<input type="text" name="Name">
+				E-mail:
+				<input type="E-mail" name="E-mail">
+				Feedback:
+				<input type="text" name="Feedback">
+				<input type="submit" name="Submit" style="margin: 5px">
+			</form>
 
-  	<div class="col" style="text-align: center;">
-    	<h2>Found the site Helpful? Express it in words then</h2>
-   			<div class="form-container"> 
- 				<form action="/.php">
-   					Name:
-   			 		<input type="text" name="Name" style="border-radius: 5px">
-   			 		E-mail:
-   			 		<input type="E-mail" name="E-mail" style="border-radius: 5px">
-    		 		Feedback:
-    		 		<input type="text" name="Feedback" style="border-radius: 5px;">
-    		 		<input type="submit" name="Submit" style="border-radius: 5px;">
- 			 	</form>
-  			</div>
-   </div>
+		</div>
+	</div>
 </footer>
+
 
 
 
 
 </body>
 </html>
+
+<!--script for modal-->
+<script type="text/javascript">
+	var prof_modal = document.getElementById("profileModal");
+	var contactBtn = document.getElementById("showProfile");
+
+// When the user clicks the button, open the modal 
+	contactBtn.onclick = function() {
+    	prof_modal.style.display = "block";
+	}
+// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+    	if (event.target == prof_modal) {
+        	prof_modal.style.display = "none";
+    	}
+	}
+
+</script>
