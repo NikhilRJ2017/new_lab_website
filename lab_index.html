@@ -19,7 +19,7 @@
 </div>
 <!--modal box-->
 <div class="modal-container">
-<center>
+
 <div id="profileModal" class="modal">
 	<div class="modal-content">
 		<div class="card" style="background-color: brown;">
@@ -34,17 +34,21 @@
 		</div>
 	</div>
 </div>
+
+</div>
+
 </center>
 </div>
+
 
 <!--navigation bar-->
 <div class="navigation-container">
 <nav class="top_navigation" style="border-radius: 10px;">
 	<ul>
   		<li style="float: left;"><a class="active" href="lab_index.html">Home</a></li>
-  		<li><a href="www.git.edu" target="_blank">College Website</a></li>
-  		<li><a href="www.library.git.edu" target="_blank">Library Webiste</a></li>
-  		<li><a href="#about">About</a></li>
+  		<li><a href="http://git.edu" target="_blank">College Website</a></li>
+  		<li><a href="http://library.git.edu" target="_blank">Library Webiste</a></li>
+  		<li><a href="feedback_form.html">Feedback</a></li>
   		<li><a href="#study_materials" onclick="goto_studymaterials_manuals()">Study Materials</a></li>
   		<li><a href="#manuals" onclick="goto_studymaterials_manuals()">Manuals</a></li>
   		</ul>
@@ -107,39 +111,32 @@
 </div>
 
 <!--footer-->
-<div class="footer-container">
-<footer>
-	<div class="footer">
-		<center>
-			<div class="footer-content">
-				<h1>About Developer</h1>
-				<title>Click below to know.</title>
-				<button id="showProfile">Details</button>
+<center>
+	<div class="footer-container">
+		<footer>
+			<div class="footer">
+				<div class="footer-content">
+					<div>
+						<h1>About Developer</h1>
+						<title>Click below to know.</title>
+						<button id="showProfile">Details</button>
+					</div>
+				</div>
 			</div>
-			<div class="footer-content">
-				<h1>Found this site useful? Well then express it in words.</h1>
-				<form>
-					Name:
-					<input type="text" name="Name">
-					E-mail:
-					<input type="E-mail" name="E-mail">
-					Feedback:
-					<input type="text" name="Feedback">
-					<input type="submit" name="Submit" style="margin: 5px;">
-				</form>
-			</div>
-		</center>
+		</footer>
 	</div>
-</footer>
-</div>
+</center>
 </body>
 
 </html>
+
+
 
 <!--script for modal-->
 <script type="text/javascript">
 	var prof_modal = document.getElementById("profileModal");
 	var contactBtn = document.getElementById("showProfile");
+		
 
 // When the user clicks the button, open the modal 
 	contactBtn.onclick = function() {

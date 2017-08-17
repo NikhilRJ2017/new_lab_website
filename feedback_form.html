@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>1st Year Lab Manuals</title>
+	<title>Feedback Form</title>
 	<link rel="stylesheet" type="text/css" href="css/pages_css.css">
 	<link rel="stylesheet" type="text/css" href="css/all_css.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,9 +16,8 @@
 <nav class="top_navigation" style="border-radius: 10px;">
 	<ul>
 		<li style="float: left;"><a class="active" href="lab_index.html">Home</a></li>
-		<li><a href="feedback_form.html" target="_blank">Feedback</a></li>
-  		<li><a href="http://library.git.edu" target="_blank">Library Webiste</a></li>
-  		<li><a href="http://git.edu" target="_blank">College Website</a></li>
+  		<li><a href="https://library.git.edu" target="_blank">Library Webiste</a></li>
+  		<li><a href="https://git.edu" target="_blank">College Website</a></li>
   		
   	</ul>
 </nav>
@@ -43,27 +42,28 @@
 </center>
 </div>
 
-
-<h1>Labrotary Subjects for 1st Year Students</h1>
-
-<div class="container">
-	<div class="container-content">
-		<a href=""><img src="css/physics.jpg" alt="Physics" width="100%" id="cg" title="Physics"></a>
+<center>
+	<h1>FeedBack Form</h1>
+</center>
+<center>
+	<div class="feedbackform">
+		<form method="post" name="feedform" action="form.php">
+			<p style="font-size: 20px;">
+			<label><b>Name:</b> <input type="text" name="name"></label>
+			</p>
+			<p style="font-size: 20px;">
+			<label><b>Email:</b> <input type="email" name="email"></label>
+			</p>
+			<p style="font-size: 20px;">
+			<label><b>Comments:</b> <textarea name="comments" rows="5" cols="30"></textarea></label>
+			</p>
+			<center><p>
+				<label><b><input type="submit" name="Submit"></b></label>
+			</p>
+			</center>
+		</form>
 	</div>
-	<div class="container-content">
-		<a href=""><img src="css/chemistry.jpg" alt="Chemistry" width="100%" id="usp" title="Chemistry"></a>
-	</div>
-	<div class="container-content">
-		<a href=""><img src="css/ccp.jpg" alt="C Programming" width="100%" id="usp" title="C Programming"></a>
-	</div>
-	
-</div>
-
-
-
-
-
-
+</center>
 
 </body>
 </html>
